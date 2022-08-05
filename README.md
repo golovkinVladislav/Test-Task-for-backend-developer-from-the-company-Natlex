@@ -32,7 +32,7 @@ Files should be processed asynchronously, results should be stored id DB.<br>
     • All data (except files) should be in JSON format. 
     • In export and import use Apache POI for parsing.
     • (Optional) Basic Authorization should be supported.
->I have used the following librariess: Spring Data, Spring Boot, Spring Security,  Flyway,Hibernate,Lombok, ApachePOI;
+>I have used the following librariess: Spring Data, Spring Boot, Flyway,Hibernate,Lombok, ApachePOI;
 Building a project: Maven
 Database: PostgreSQL 
 For testing: Postman
