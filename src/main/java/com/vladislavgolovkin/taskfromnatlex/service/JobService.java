@@ -56,6 +56,9 @@ public class JobService {
                 jobRepository.getJobTypeEqualExport(jobId).getJobType().equals(JobType.EXPORT)) {
             throw new JobResultException("Job result status for jobId " +jobId + " = ERROR ");
         }
+        if(jobRepository.getJobTypeEqualImport(jobId).getJobType().equals(JobType.IMPORT)){
+            throw new JobResultException("The ID for the export will not find");
+        }
         throw new JobResultException("The export is in progress");
     }
 }
